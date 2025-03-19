@@ -13,8 +13,11 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: "export", // Enables static export
+  basePath: "/Portfolio", // Replace with your repo name
+  assetPrefix: "/Portfolio/", // Fixes asset loading on GitHub Pages
   images: {
-    unoptimized: true,
+    unoptimized: true, // Fixes image issues on GitHub Pages
   },
   experimental: {
     webpackBuildWorker: true,
