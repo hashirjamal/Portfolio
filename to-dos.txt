@@ -1,0 +1,4 @@
+TO DOs for Portfolio:
+
+Add images of 4 projects
+Implement Node Mailer for CTA
