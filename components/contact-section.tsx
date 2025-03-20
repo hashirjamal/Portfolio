@@ -36,12 +36,12 @@ const handleChange = (key:keyof msg,value:string) =>{
 
 }
 
-
+const url = process.env.VERCEL_UR || "localhost:3000"
 const sendEmail = async(e:React.FormEvent)=>{
   e.preventDefault()
   console.log(userMsg)
   try{
-    const res= await axios.post(`https://portfolio-tawny-alpha-57.vercel.app/api/send-email`,{
+    const res= await axios.post(`https://${url}/api/send-email`,{
      ...userMsg
     }, {
       headers: {
