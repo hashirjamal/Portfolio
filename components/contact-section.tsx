@@ -41,7 +41,7 @@ const sendEmail = async(e:React.FormEvent)=>{
   e.preventDefault()
   console.log(userMsg)
   try{
-    const res= await axios.post("/api/send-email",{
+    const res= await axios.post(`${process.env.URL}/api/send-email`,{
      ...userMsg
     }, {
       headers: {
