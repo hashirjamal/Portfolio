@@ -27,7 +27,7 @@ export default function ProjectsSection() {
       id: "ManageWare",
       title: "Warehouse Management System",
       category: "Web Application",
-      image: "/lf1.png",
+      image: "/placeholder.svg?height=600&width=800",
       description:
       "An interactive analytics based warehouse management system which lets warehouse owners manage their inventory, purchase and sale orders.",
     },
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
       id: "LearnFlow",
       title: "Academic Document Sharing Platform",
       category: "AI SaaS",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/lf1.png",
       description:
       "A one stop platform for researchers and students to store and share their documents along with Chat with PDF and flashcard generation features.",
     },
