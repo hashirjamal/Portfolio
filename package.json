@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "predeploy": "npm run build &&  touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME npm run export",
-    "deploy": "gh-pages -d out"
+    "predeploy": "npm run build &&  touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME npm run export",
+    "deploy": "next build gh-pages -d out"
   },
   "homepage": "http://hashirjamal.me",
   "dependencies": {
