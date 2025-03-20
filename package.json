@@ -10,7 +10,7 @@
      "predeploy": "npm run build &&  touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME",
     "deploy": "gh-pages -d out"
   },
-  "homepage": "https://hashirjamal.github.io/Portfolio",
+  "homepage": "http://hashirjamal.me/Portfolio",
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",
