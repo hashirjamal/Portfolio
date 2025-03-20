@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "predeploy": "npm run build &&  touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME",
+     "predeploy": "npm run build &&  touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME npm run export",
     "deploy": "gh-pages -d out"
   },
-  "homepage": "http://hashirjamal.me/Portfolio",
+  "homepage": "http://hashirjamal.me",
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",
