@@ -14,8 +14,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   output: "export", // Enables static export
-  basePath: "/Portfolio",
-  assetPrefix: "/Portfolio/",
+  // basePath: "/Portfolio",
+  // assetPrefix: "/Portfolio/",
   // basePath: "/Portfolio", // Replace with your repo name
   // assetPrefix: "/Portfolio/", // Fixes asset loading on GitHub Pages
   images: {
