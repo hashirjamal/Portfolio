@@ -13,7 +13,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  output: "export", // Enables static export
+
   // basePath: "/Portfolio",
   // assetPrefix: "/Portfolio/",
   // basePath: "/Portfolio", // Replace with your repo name
