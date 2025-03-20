@@ -36,7 +36,7 @@ const handleChange = (key:keyof msg,value:string) =>{
 
 }
 
-const url = process.env.VERCEL_URL || "localhost:3000"
+const url = process.env.VERCEL_PROJECT_PRODUCTION_URL || "https://www.hashirjamal.me/"
 const sendEmail = async(e:React.FormEvent)=>{
   e.preventDefault()
   console.log(userMsg)
