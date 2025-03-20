@@ -12,6 +12,19 @@ export const config = {
     bodyParser: true, // Ensure this is enabled (default is true)
   },
 };
+
+export async function OPTIONS() {
+  return NextResponse.json({}, {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    },
+  });
+}
+
+
 export async function POST(req:NextRequest){
 
   let body = await req.json()
@@ -52,7 +65,18 @@ const mailOptions = {
 
 const res = await transport.sendMail(mailOptions)
 
-return NextResponse.json({status:"Success",message:"Email sent successfully"})
+return NextResponse.json({status:"Success",message:"Email sent successfully"}
+  ,{
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    },
+  
+  }
+
+)
 }
 catch(e){
   console.log(e)
