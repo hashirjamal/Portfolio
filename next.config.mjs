@@ -15,7 +15,7 @@ const nextConfig = {
   },
   output: "export", // Enables static export
   basePath: "",
-  assetPrefix: "/",
+  assetPrefix: "/Portfolio/",
   // basePath: "/Portfolio", // Replace with your repo name
   // assetPrefix: "/Portfolio/", // Fixes asset loading on GitHub Pages
   images: {
