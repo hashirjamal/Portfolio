@@ -35,11 +35,11 @@ const handleChange = (key:keyof msg,value:string) =>{
   setUserMsg(obj)
 
 }
-console.log(process.env)
+// console.log(process.env)
 const url = process.env.VERCEL_PROJECT_PRODUCTION_URL || "www.hashirjamal.me"
 const sendEmail = async(e:React.FormEvent)=>{
   e.preventDefault()
-  console.log(userMsg)
+  // console.log(userMsg)
   try{
     const res= await axios.post(`https://${url}/api/send-email`,{
      ...userMsg

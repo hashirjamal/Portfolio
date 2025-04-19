@@ -35,7 +35,7 @@ try{
   // console.log(process.env)
 const transport = nodemailer.createTransport(
     {
-      host: "live.smtp.mailtrap.io",
+      host: "smtp.gmail.com",
       port: 587,
   auth: {
     user:process.env.email_user,
@@ -47,7 +47,7 @@ pass:process.env.pass,
 
 
 const mailOptions = {
-    from :"info@demomailtrap.co",
+    from :"hashirjamal18@gmail.com",
     to:"hashirjamal18@gmail.com",
     subject:"Client Query from Portfolio Website",
     html: `
